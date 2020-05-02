@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"></meta>
+    <title>Index首页</title>
+</head>
+<body>
+<form th:action="#{/user/login}" method="post">
+username:<input type="text"  placeholder="Username" th:placeholder="#{login.username}" required="" autofocus="" />
+password:<input type="password" placeholder="Password" th:placeholder="#{login.password}" required="" />
+<input type="submit" th:text="#{login.btn}" />sign in
+</form>
+</body>
+</html>
